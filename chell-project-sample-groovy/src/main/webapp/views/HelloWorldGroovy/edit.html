@@ -1,0 +1,13 @@
+<h1>Edit preferences</h1>
+
+%{if (message) { }%
+  ${message}
+%{ } }%
+
+%{if (pf.errors) { }%
+  ${pf.errors}
+%{ } }%
+
+<form action="@action{'savePreferences'}" method="post">
+    ${pf.html}
+</form>

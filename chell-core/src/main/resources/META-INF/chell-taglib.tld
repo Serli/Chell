@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+    <description>JSTL 1.0 Chell Taglib</description>
+    <display-name>Chell Taglib</display-name>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>1.2</jsp-version>
+    <short-name>chl</short-name>
+    <uri>http://serli.com/taglibs/chell</uri>
+
+    <tag>
+        <description>Define the current form used.</description>
+        <name>define</name>
+        <tag-class>com.serli.chell.framework.taglib.DefineTag</tag-class>
+        <attribute>
+            <description>Name of the form in the model</description>
+            <name>form</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Render a form tag.</description>
+        <name>form</name>
+        <tag-class>com.serli.chell.framework.taglib.FormTag</tag-class>
+        <attribute>
+            <description>Name of the form in the model</description>
+            <name>form</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>Name of the portlet action</description>
+            <name>action</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>className</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>accept</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>acceptCharset</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>style</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>id</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Render a form content.</description>
+        <name>fields</name>
+        <tag-class>com.serli.chell.framework.taglib.FieldsTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>Name of the form in the model</description>
+            <name>form</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Render a form button.</description>
+        <name>button</name>
+        <tag-class>com.serli.chell.framework.taglib.ButtonTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>Name of the form in the model</description>
+            <name>form</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>Type of the button : 'submit' or 'cancel'</description>
+            <name>type</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Render all errors of a form.</description>
+        <name>errors</name>
+        <tag-class>com.serli.chell.framework.taglib.ErrorsTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>Name of the form in the model</description>
+            <name>form</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Render a form field input.</description>
+        <name>input</name>
+        <tag-class>com.serli.chell.framework.taglib.InputTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>Name of the form in the model</description>
+            <name>form</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>Name of the field in the form</description>
+            <name>field</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Render a form field label.</description>
+        <name>label</name>
+        <tag-class>com.serli.chell.framework.taglib.LabelTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>Name of the form in the model</description>
+            <name>form</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>Name of the field in the form</description>
+            <name>field</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Render a form field error.</description>
+        <name>error</name>
+        <tag-class>com.serli.chell.framework.taglib.ErrorTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>Name of the form in the model</description>
+            <name>form</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>Name of the field in the form</description>
+            <name>field</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>Determine if the error has HTML or text format</description>
+            <name>raw</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>boolean</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Convert a form field in its real value.</description>
+        <name>convert</name>
+        <tag-class>com.serli.chell.framework.taglib.ConvertTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>Name of the form in the model</description>
+            <name>form</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>Name of the field in the form</description>
+            <name>field</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>Name of the variable where the result is stored.</description>
+            <name>var</name>
+            <required>false</required>
+            <rtexprvalue>false</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Get a message from a resource bundle.</description>
+        <name>message</name>
+        <tag-class>com.serli.chell.framework.taglib.MessageTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>key</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>bundle</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>text</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>var</name>
+            <required>false</required>
+            <rtexprvalue>false</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>type</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Render the message area</description>
+        <name>message-area</name>
+        <tag-class>com.serli.chell.framework.taglib.MessageAreaTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+</taglib>

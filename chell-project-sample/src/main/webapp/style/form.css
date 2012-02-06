@@ -1,0 +1,8 @@
+.chell-portlet td, .chell-portlet input, .chell-portlet select, .chell-portlet textarea, .chell-portlet label {
+    vertical-align: middle;
+}
+
+.chell-portlet ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}

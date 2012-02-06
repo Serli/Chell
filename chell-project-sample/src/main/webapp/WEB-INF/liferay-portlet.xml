@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 5.2.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_5_2_0.dtd">
+
+<liferay-portlet-app>
+    <portlet>
+        <portlet-name>HelloWorld</portlet-name>
+        <preferences-company-wide>false</preferences-company-wide>
+        <preferences-unique-per-layout>true</preferences-unique-per-layout>
+        <instanceable>true</instanceable>
+    </portlet>
+</liferay-portlet-app>
